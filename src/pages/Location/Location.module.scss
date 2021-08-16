@@ -1,0 +1,69 @@
+.location_page {
+    padding: 30px 20px;
+
+    section {
+        text-align: center;
+    
+        .geo {
+            border: 0;
+        }
+
+        iframe {
+            width: 1040px;
+            height: 450px;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .location_page { 
+        section {
+            iframe {
+                width: 980px;
+                height: 450px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .location_page { 
+        section {
+            iframe {
+                width: 728px;
+                height: 450px;
+            }
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .location_page { 
+        section {
+            iframe {
+                width: 385px;
+            }
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .location_page { 
+        section {
+            iframe {
+                width: 335px;
+                height: 400px;
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .location_page { 
+        section {
+            iframe {
+                width: 280px;
+            }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+.info {
+    width: 40%;
+    line-height: 35px;
+}
+
+@media (max-width: 425px) {
+    .info {
+        width: 100%;
+    }
+}

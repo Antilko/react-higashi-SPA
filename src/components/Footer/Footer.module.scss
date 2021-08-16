@@ -1,0 +1,134 @@
+.footer {
+    background-color: #222;
+    height: auto;
+    border-radius: 0px 0px 20px 20px ;
+    padding: 30px 40px;
+    color: #c7c7c7ce;
+
+    .footerWrapper {
+        display: grid;
+        grid-template-columns: 35% 65%;
+
+        .info {
+            font-size: 14px;
+            color: #a1a1a198;
+        }
+
+        .logo {
+            width: 200px;
+            height: auto;
+        }
+    } 
+
+    .footerListItems {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 50px;
+    }
+
+    .footerListItem {
+        font-size: 14px;
+    }
+
+    .footerItem {
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+}
+
+@media (max-width: 1024px) {
+    .footer {
+        border-radius: initial;
+        .footerListItems {
+            padding-right: 20px;
+            padding-left: 30px;
+        }
+
+        div {
+            font-size: 14px;
+        }
+
+        .footerWrapper {
+            display: grid;
+            grid-template-columns: 40% 60%;
+        }
+    }  
+}
+
+@media (max-width: 768px) {
+    .footer {
+        .footerWrapper {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .footerLogo {
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .footerListItems {
+            justify-content: space-evenly;
+            padding: 0;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .footer {
+        padding: 20px;
+
+        .footerListItems {
+            justify-content: space-between;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .footer {
+        padding: 20px;
+
+        .paymentsLogo {
+            width: 350px;
+        }
+
+        .footerListItems {
+            flex-wrap: wrap;
+        }
+
+        .footerListItem {
+            &:nth-child(1) {
+                order: 1;
+            }
+
+            &:nth-child(2) {
+                margin-top: 10px;
+                order: 3;
+                width: 100%;
+                text-align: center;
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;                 
+                }
+            }
+
+            &:last-child {
+                order: 2;  
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .footer {
+        padding: 20px;
+
+        .paymentsLogo {
+            width: 300px;
+        }
+    }
+}

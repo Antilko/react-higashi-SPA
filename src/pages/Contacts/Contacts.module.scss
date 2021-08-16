@@ -1,0 +1,128 @@
+.contacts_page {
+    padding: 30px 20px;
+
+    .contactsMessage {
+        padding: 40px 120px;
+        margin-bottom: 50px;
+        background-color: #d44277b7;
+        color: #382d05;
+        font-size: 28px;
+        border-radius: 7px;
+        text-align: center;
+    }
+
+    .contactsItem {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 20px;
+
+        .contactsImages {
+            display: block;
+            width: 7%;
+            margin-right: 10px;
+        }      
+        
+        p {
+            width: 93%;
+        }
+
+        &:nth-child(3) {
+            margin-bottom: 20px;
+            padding-bottom: 50px;
+            border-bottom: 1px solid #bbc2ca;
+        }
+
+        &:nth-child(5) {
+            padding-bottom: 10px;
+        }
+    }
+
+    .contactsPhone {
+        margin-left: 7%;
+    }    
+
+    .bold {
+        font-weight: bold;
+    }
+}
+
+@media (max-width: 1024px) {
+    .contacts_page {    
+        .contactsMessage {
+            padding: 30px 50px;
+            text-align: center;
+        }
+
+        .contactsItem {
+            .contactsImages {
+                width: initial;
+            }  
+        }
+
+        .contactsPhone {
+            margin-left: 10%;
+        }   
+    }
+}
+
+@media (max-width: 768px) {
+    .contacts_page {    
+        .contactsMessage {
+            padding: 30px 30px;
+            text-align: center;
+        }
+
+        .contactsItem {
+            .contactsImages {
+                width: initial;
+            }  
+        }
+
+        .contactsPhone {
+            margin-left: 10%;
+        }   
+    }
+}
+
+@media (max-width: 425px) {
+    .contacts_page {    
+        .contactsMessage {
+            padding: 20px 20px;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .contactsItem {
+            flex-direction: column;
+            .contactsImages {
+                margin-bottom: 10px;
+            }  
+
+            &:nth-child(3) {
+                border-bottom: none;
+                padding-bottom: 0px;
+            }
+        }
+
+        .contactsPhone {
+            margin-left: 3.5%;
+        }   
+    }
+}
+
+@media (max-width: 375px) {
+    .contacts_page {    
+        .contactsMessage {
+            font-size: 22px;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .contacts_page {    
+        .contactsMessage {
+            font-size: 20px;
+        }
+    }
+}
